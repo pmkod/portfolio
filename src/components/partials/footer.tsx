@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-xs text-gray-700">
-          &copy;{new Date().getFullYear()} Designed by Kodossou
+          &copy;{new Date().getFullYear()} Designed by Kouassi Kodossou
         </div>
       </div>
     </footer>
