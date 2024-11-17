@@ -30,8 +30,8 @@ export default () => {
         </div>
 
         <ProjejctList>
-          {works.map((item) => (
-            <ProjectItem key={item.mainPictureName} {...item} />
+          {works.map((item, index) => (
+            <ProjectItem key={index} {...item} />
           ))}
         </ProjejctList>
       </div>
@@ -65,7 +65,7 @@ export default () => {
 };
 
 export const metadata = {
-  title: "Kodossou Kouassi",
+  title: "Kodossou",
   meta: [
     {
       name: "description",

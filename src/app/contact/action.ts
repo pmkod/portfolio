@@ -1,8 +1,6 @@
 "use server";
+import { sendMail } from "@/utils/mail.utils";
 import { z } from "zod";
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
 
 const contactFormDataSchema = z
   .object({
@@ -19,19 +17,21 @@ const contactFormDataSchema = z
   .strict();
 
 export const saveMessage = async function (formData: FormData) {
-  const data = {
+  const { data, success, error } = contactFormDataSchema.safeParse({
     name: formData.get("name")?.toString(),
+
     email: formData.get("email")?.toString(),
+
     message: formData.get("message")?.toString(),
-  };
-  const conctactFormValidation = contactFormDataSchema.safeParse(data);
-  if (!conctactFormValidation.success) {
+  });
+  if (!success) {
     return {
-      error: { message: conctactFormValidation.error.issues[0].message },
+      error: { message: error.issues[0].message },
     };
   } else {
-    await prisma.contactFormData.create({
-      data: conctactFormValidation.data,
+    await sendMail({
+      text: data.message,
+      subject: `Message from ${data.name} ${data.email}`,
     });
   }
 };

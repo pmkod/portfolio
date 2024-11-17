@@ -25,3 +25,13 @@ export default () => {
     </div>
   );
 };
+
+export const metadata = {
+  title: "Message sent",
+  meta: [
+    {
+      name: "description",
+      content: "Portfolio",
+    },
+  ],
+};

@@ -10,6 +10,7 @@ import {
   SiMysql,
   SiNextdotjs,
   SiNodedotjs,
+  SiPostgresql,
   SiReact,
   SiRedis,
   SiTailwindcss,
@@ -53,8 +54,8 @@ export const backendStack = [
 
 export const databaseStack = [
   {
-    name: "Mysql",
-    icon: <SiMysql color="#00758f" />,
+    name: "Postgresql",
+    icon: <SiPostgresql color="#00758f" />,
   },
   {
     name: "Mongodb",

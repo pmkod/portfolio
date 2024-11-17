@@ -25,6 +25,7 @@ const ContactForm = () => {
   };
 
   const handleSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
+    e.preventDefault();
     const formData = new FormData(e.currentTarget);
 
     startTransition(() => {
