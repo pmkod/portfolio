@@ -1,6 +1,16 @@
 import Link from "next/link";
 import { LuMailCheck } from "react-icons/lu";
 
+export const metadata = {
+  title: "Message sent",
+  meta: [
+    {
+      name: "description",
+      content: "Your message has been sent",
+    },
+  ],
+};
+
 export default () => {
   return (
     <div className="flex flex-col items-center pt-10">
@@ -24,14 +34,4 @@ export default () => {
       </div>
     </div>
   );
-};
-
-export const metadata = {
-  title: "Message sent",
-  meta: [
-    {
-      name: "description",
-      content: "Portfolio",
-    },
-  ],
 };

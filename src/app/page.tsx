@@ -5,6 +5,16 @@ import { stacks } from "@/constants/stack";
 import { works } from "@/constants/works";
 import Link from "next/link";
 
+export const metadata = {
+  meta: [
+    {
+      name: "description",
+      content:
+        "I'm a passionate professional showcasing my best work and creative solutions. Explore my portfolio to see how I bring ideas to life through careful attention to detail and dedication to excellence.",
+    },
+  ],
+};
+
 export default () => {
   return (
     <div>
@@ -62,14 +72,4 @@ export default () => {
       </div>
     </div>
   );
-};
-
-export const metadata = {
-  title: "Kodossou",
-  meta: [
-    {
-      name: "description",
-      content: "Portfolio",
-    },
-  ],
 };

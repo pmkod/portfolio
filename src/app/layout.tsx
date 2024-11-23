@@ -1,6 +1,7 @@
 import "./globals.css";
 import Footer from "@/components/partials/footer";
 import Header from "@/components/partials/header";
+import { Metadata } from "next";
 
 import { Roboto_Slab } from "next/font/google";
 
@@ -9,6 +10,15 @@ const robotoSlab = Roboto_Slab({
   weight: ["400", "500", "600", "700"],
 });
 
+export const metadata: Metadata = {
+  title: {
+    template: "%s - Kodossou Kouassi",
+    default: "Kodossou Kouassi",
+  },
+  description:
+    "Accessible and customizable components built on Ark UI. Free and Open Source.",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -16,9 +26,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" type="image/x-icon" href="/favicon.svg" />
-      </head>
       <body className={robotoSlab.className}>
         <Header />
         {children}

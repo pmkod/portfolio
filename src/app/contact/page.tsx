@@ -5,7 +5,8 @@ export const metadata = {
   meta: [
     {
       name: "description",
-      content: "Portfolio",
+      content:
+        "Let's work together! Feel free to reach out with your ideas, questions, or project inquiries. I'm here to discuss how we can collaborate and bring your vision to life.",
     },
   ],
 };
