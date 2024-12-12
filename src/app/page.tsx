@@ -4,15 +4,10 @@ import { ProjejctList } from "@/components/lists/projejct-list";
 import { stacks } from "@/constants/stack";
 import { works } from "@/constants/works";
 import Link from "next/link";
+import { Metadata } from "next";
 
-export const metadata = {
-  meta: [
-    {
-      name: "description",
-      content:
-        "I'm a passionate professional showcasing my best work and creative solutions. Explore my portfolio to see how I bring ideas to life through careful attention to detail and dedication to excellence.",
-    },
-  ],
+export const metadata: Metadata = {
+  description: "I'm a passionate professional showcasing my best work and creative solutions. Explore my portfolio to see how I bring ideas to life through careful attention to detail and dedication to excellence."
 };
 
 export default () => {

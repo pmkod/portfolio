@@ -15,8 +15,6 @@ export const metadata: Metadata = {
     template: "%s - Kodossou Kouassi",
     default: "Kodossou Kouassi",
   },
-  description:
-    "Accessible and customizable components built on Ark UI. Free and Open Source.",
 };
 
 export default function RootLayout({

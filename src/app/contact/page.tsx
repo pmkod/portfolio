@@ -1,14 +1,10 @@
 import ContactForm from "@/components/forms/contact-form";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata:Metadata = {
   title: "Contact me",
-  meta: [
-    {
-      name: "description",
-      content:
-        "Let's work together! Feel free to reach out with your ideas, questions, or project inquiries. I'm here to discuss how we can collaborate and bring your vision to life.",
-    },
-  ],
+  description: 
+  "Let's work together! Feel free to reach out with your ideas, questions, or project inquiries. I'm here to discuss how we can collaborate and bring your vision to life.",
 };
 
 export default () => {

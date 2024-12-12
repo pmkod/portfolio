@@ -1,14 +1,10 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import { LuMailCheck } from "react-icons/lu";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Message sent",
-  meta: [
-    {
-      name: "description",
-      content: "Your message has been sent",
-    },
-  ],
+  description: "Your message has been sent"
 };
 
 export default () => {
