@@ -31,7 +31,8 @@ export default function RootLayout({
         <Footer />
         <Script
 					async
-					src="https://analytics.kodossou.com/script.js" data-website-id="3dd26686-7751-4623-b61c-5aedf9a04ec6"/>
+          src="https://analytics.4ml3f81l4vtbdgwuldhdcqwbq7reg4oiffr3xdbi.kodossou.com/script.js" data-website-id="15f04d96-53eb-47ff-aef5-33fa93bc5b42"
+          />
       </body>
     </html>
   );
